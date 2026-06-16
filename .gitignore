@@ -1,33 +1,58 @@
-# Environment variables - NEVER commit these
-.env
-.env.local
-.env.production
-
-# Dependencies
+# Node
 node_modules/
+package-lock.json
+yarn.lock
 
-# Expo
-.expo/
+# Build output
 dist/
-web-build/
+build/
+out/
+lib/
 
-# Native builds
-android/
-ios/
+# TypeScript
+*.tsbuildinfo
+
+# Environment / secrets
+.env
+.env.*
+*.keystore
+*.jks
+google-services.json
 
 # Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
 
-# OS files
+# Test coverage
+coverage/
+.nyc_output/
+jest-cache/
+.vitest/
+
+# Caches
+.cache/
+.parcel-cache/
+.turbo/
+.next/
+
+# Expo / React Native
+.expo/
+.expo-shared/
+android/.gradle/
+android/app/build/
+ios/Pods/
+ios/build/
+*.keystore
+
+# Editor / OS
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# TypeScript
-*.tsbuildinfo
-
-# Misc
-.idea/
-.vscode/
-*.log
+# DBs and misc
+*.sqlite
+*.db
